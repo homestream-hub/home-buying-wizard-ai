@@ -4,6 +4,7 @@ import AppSidebar from "@/components/layout/AppSidebar";
 import AIChatbot from "@/components/home/AIChatbot";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { SidebarInset } from "@/components/ui/sidebar";
 import {
   Card,
   CardContent,
@@ -80,7 +81,7 @@ const Documents = () => {
     <div className="min-h-screen flex bg-gray-50">
       <AppSidebar />
       
-      <div className="flex-1 flex flex-col">
+      <SidebarInset className="flex-1 flex flex-col">
         <header className="sticky top-0 z-30 bg-white border-b h-16 flex items-center px-6">
           <h1 className="text-lg font-semibold">Document Management</h1>
         </header>
@@ -267,7 +268,7 @@ const Documents = () => {
             </div>
           </div>
         </main>
-      </div>
+      </SidebarInset>
       
       <AIChatbot />
     </div>

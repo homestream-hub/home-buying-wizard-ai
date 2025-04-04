@@ -38,7 +38,7 @@ const AppSidebar = ({ onLogout }: { onLogout?: () => void }) => {
   };
 
   return (
-    <Sidebar defaultOpen={!isMobile} className="border-r">
+    <Sidebar className="border-r">
       <SidebarHeader className="flex h-16 items-center px-4">
         <div className="flex items-center space-x-2">
           <div className="bg-homestream-600 h-8 w-8 rounded-md flex items-center justify-center">

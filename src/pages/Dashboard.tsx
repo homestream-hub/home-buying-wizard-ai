@@ -5,6 +5,7 @@ import DashboardOverview from "@/components/dashboard/DashboardOverview";
 import AIChatbot from "@/components/home/AIChatbot";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Bell, Home, Search, User } from "lucide-react";
+import { SidebarInset } from "@/components/ui/sidebar";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -13,7 +14,7 @@ const Dashboard = () => {
     <div className="min-h-screen flex bg-gray-50">
       <AppSidebar />
       
-      <div className="flex-1 flex flex-col">
+      <SidebarInset className="flex-1 flex flex-col">
         <header className="sticky top-0 z-30 bg-white border-b h-16 flex items-center px-6 gap-4">
           <h1 className="text-lg font-semibold">Dashboard</h1>
           
@@ -79,7 +80,7 @@ const Dashboard = () => {
             </Tabs>
           </div>
         </main>
-      </div>
+      </SidebarInset>
       
       <AIChatbot />
     </div>
